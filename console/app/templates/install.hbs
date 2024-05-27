@@ -7,16 +7,16 @@
             </div>
             <div class="space-y-4 mb-5">
                 {{#each this.steps as |step|}}
-                    <div class="border {{if (eq step.status 'pending') 'border-black bg-gray-800'}} {{if (eq step.status 'in_progress') "border-blue-500 bg-blue-900"}} {{if (eq step.status 'completed') 'border-green-900 bg-green-800'}} {{if (eq step.status 'failed') 'border-red-900 bg-red-800'}} shadow-md px-4 py-2 flex flex-row items-center rounded-xl">
+                    <div class="border {{if (eq step.status 'pending') 'border-black bg-gray-800'}} {{if (eq step.status 'in_progress') "border-green-500 bg-green-900"}} {{if (eq step.status 'completed') 'border-green-900 bg-green-800'}} {{if (eq step.status 'failed') 'border-red-900 bg-red-800'}} shadow-md px-4 py-2 flex flex-row items-center rounded-xl">
                         <div class="w-12 flex flex-row items-center">
-                            <FaIcon @icon="circle-check" class="{{if (eq step.status 'pending') "text-gray-500"}} {{if (eq step.status 'in_progress') "text-blue-200"}} {{if (eq step.status 'completed') "text-green-400"}} {{if (eq step.status 'failed') "text-red-400"}}" />
+                            <FaIcon @icon="circle-check" class="{{if (eq step.status 'pending') "text-gray-500"}} {{if (eq step.status 'in_progress') "text-green-200"}} {{if (eq step.status 'completed') "text-green-400"}} {{if (eq step.status 'failed') "text-red-400"}}" />
                             {{#if (eq step.status 'in_progress')}}
                                 <div class="ml-2 -mb-0.5">
                                     <Spinner />
                                 </div>
                             {{/if}}
                         </div>
-                        <span class="{{if (eq step.status 'pending') "text-gray-500"}} {{if (eq step.status 'in_progress') "text-blue-200"}} {{if (eq step.status 'completed') "text-green-400"}} {{if (eq step.status 'failed') "text-red-400"}} font-semibold">{{step.name}}</span>
+                        <span class="{{if (eq step.status 'pending') "text-gray-500"}} {{if (eq step.status 'in_progress') "text-green-200"}} {{if (eq step.status 'completed') "text-green-400"}} {{if (eq step.status 'failed') "text-red-400"}} font-semibold">{{step.name}}</span>
                     </div>
                 {{/each}}
             </div>

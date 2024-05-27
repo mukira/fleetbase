@@ -8,7 +8,7 @@
     <InputGroup @wrapperClass="flex flex-row items-center">
         <UploadButton @name="apn-key" @accept="text/plain,application/x-pem-file,application/x-pkcs12,application/x-x509-ca-cert,.p12,.pem,.p8" @onFileAdded={{this.uploadApnKey}} @buttonText="Upload P8 Key File" @icon="upload" class="w-auto m-0i mt-0i" />
         {{#if this.apn.private_key_file}}
-            <div class="ml-2.5 text-sm dark:text-white text-black flex flex-row items-center border border-blue-500 rounded-lg px-2 py-0.5 -mt-1">
+            <div class="ml-2.5 text-sm dark:text-white text-black flex flex-row items-center border border-green-500 rounded-lg px-2 py-0.5 -mt-1">
                 <FaIcon @icon="file-text" @size="sm" class="mr-2 dark:text-white text-black" />
                 <span>{{this.apn.private_key_file.original_filename}}</span>
                 <a href="javascript:;" class="text-red-500 ml-2" {{on "click" this.removeApnFile}}><FaIcon @icon="times" class="text-red-500" /></a>
@@ -24,7 +24,7 @@
     <InputGroup @wrapperClass="flex flex-row items-center mb-0i">
         <UploadButton @name="firebase-service-account" @accept="text/plain,text/javascript,application/json" @onFileAdded={{this.uploadFirebaseCredentials}} @buttonText="Upload Service Account JSON" @icon="upload" class="w-auto m-0i mt-0i" />
         {{#if this.firebase.credentials_file}}
-            <div class="ml-2.5 text-sm dark:text-white text-black flex flex-row items-center border border-blue-500 rounded-lg px-2 py-0.5 -mt-1">
+            <div class="ml-2.5 text-sm dark:text-white text-black flex flex-row items-center border border-green-500 rounded-lg px-2 py-0.5 -mt-1">
                 <FaIcon @icon="file-text" @size="sm" class="mr-2 dark:text-white text-black" />
                 <span>{{this.firebase.credentials_file.original_filename}}</span>
                 <a href="javascript:;" class="text-red-500 ml-2" {{on "click" this.removeFirebaseCredentialsFile}}><FaIcon @icon="times" class="text-red-500" /></a>
@@ -66,5 +66,5 @@
 <Spacer @height="300px" />
 
 <EmberWormhole @to="next-view-section-subheader-actions">
-    <Button @type="primary" @size="sm" @icon="save" @text="Save Changes" @onClick={{this.save}} @disabled={{this.isLoading}} @isLoading={{this.isLoading}} />
+    <Button @type="primary" @size="lg" @icon="save" @text="Save Changes" @onClick={{this.save}} @disabled={{this.isLoading}} @isLoading={{this.isLoading}} />
 </EmberWormhole>

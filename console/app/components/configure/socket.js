@@ -140,7 +140,7 @@ export default class ConfigureSocketComponent extends Component {
                 this.events.pushObject({
                     time: format(new Date(), this.consoleDateFormat),
                     content: `Socket subscribed to test channel`,
-                    color: 'blue',
+                    color: 'green',
                 });
             }
         })();

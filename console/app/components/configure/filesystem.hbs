@@ -1,5 +1,5 @@
 <ContentPanel @title="Filesystem" @open={{true}} @pad={{true}} @panelBodyClass="bg-white dark:bg-gray-800">
-    <InputGroup @name="Driver" @helpText="Select the default filesystem driver for Fleetbase to use.">
+    <InputGroup @name="Driver" @helpText="Select the default filesystem driver for LipaGas to use.">
         <Select @options={{this.disks}} @value={{this.driver}} @onSelect={{this.setDriver}} @placeholder="Select filesystem driver" class="w-full" disabled={{this.isLoading}} />
     </InputGroup>
     {{#if (eq this.driver "s3")}}
@@ -21,7 +21,7 @@
             <div class="flex flex-row items-center mb-0i">
                 <UploadButton @name="firebase-service-account" @accept="text/plain,text/javascript,application/json" @onFileAdded={{this.uploadGcsCredentialsFile}} @buttonText="Upload Service Account JSON" @icon="upload" class="w-auto m-0i mt-0i" />
                 {{#if this.gcsCredentialsFile}}
-                    <div class="ml-2.5 text-sm dark:text-white text-black flex flex-row items-center border border-blue-500 rounded-lg px-2 py-0.5 -mt-1">
+                    <div class="ml-2.5 text-sm dark:text-white text-black flex flex-row items-center border border-green-500 rounded-lg px-2 py-0.5 -mt-1">
                         <FaIcon @icon="file-text" @size="sm" class="mr-2 dark:text-white text-black" />
                         <span>{{this.gcsCredentialsFile.original_filename}}</span>
                         <a href="javascript:;" class="text-red-500 ml-2" {{on "click" this.removeGcsCredentialsFile}}>
@@ -42,5 +42,5 @@
 </ContentPanel>
 
 <EmberWormhole @to="next-view-section-subheader-actions">
-    <Button @type="primary" @size="sm" @icon="save" @text="Save Changes" @onClick={{this.save}} @disabled={{this.isLoading}} @isLoading={{this.isLoading}} />
+    <Button @type="primary" @size="lg" @icon="save" @text="Save Changes" @onClick={{this.save}} @disabled={{this.isLoading}} @isLoading={{this.isLoading}} />
 </EmberWormhole>

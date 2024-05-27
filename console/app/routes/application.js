@@ -15,7 +15,7 @@ export default class ApplicationRoute extends Route {
     @tracked defaultTheme;
 
     /**
-     * Check the installation status of Fleetbase and transition user accordingly.
+     * Check the installation status of LipaGas and transition user accordingly.
      *
      * @return {void|Transition}
      * @memberof ApplicationRoute
@@ -72,7 +72,7 @@ export default class ApplicationRoute extends Route {
     }
 
     /**
-     * Checks to determine if Fleetbase should be installed or user needs to onboard.
+     * Checks to determine if LipaGas should be installed or user needs to onboard.
      *
      * @return {Promise}
      * @memberof ApplicationRoute
