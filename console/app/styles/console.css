@@ -48,3 +48,9 @@ body[data-theme='dark'] .two-fa-enforcement-alert button#two-fa-setup-button.btn
 body.console-admin-organizations-index-index .next-table-wrapper > table {
     table-layout: auto;
 }
+
+.btn-primary {
+    background-color: #006a4e !important;
+    border-color: #006a4e !important;
+    box-shadow: #006a4e !important;
+}

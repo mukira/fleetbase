@@ -1,5 +1,5 @@
 <ContentPanel @title="Queue" @open={{true}} @pad={{true}} @panelBodyClass="bg-white dark:bg-gray-800">
-    <InputGroup @name="Driver" @helpText="Select the default queue driver for Fleetbase to use.">
+    <InputGroup @name="Driver" @helpText="Select the default queue driver for LipaGas to use.">
         <Select @options={{this.connections}} @value={{this.driver}} @onSelect={{this.setDriver}} @placeholder="Select queue driver" disabled={{this.isLoading}} class="w-full" />
     </InputGroup>
     {{#if (eq this.driver "beanstalkd")}}
@@ -21,5 +21,5 @@
 </ContentPanel>
 
 <EmberWormhole @to="next-view-section-subheader-actions">
-    <Button @type="primary" @size="sm" @icon="save" @text="Save Changes" @onClick={{this.save}} @disabled={{this.isLoading}} @isLoading={{this.isLoading}} />
+    <Button @type="primary" @size="lg" @icon="save" @text="Save Changes" @onClick={{this.save}} @disabled={{this.isLoading}} @isLoading={{this.isLoading}} />
 </EmberWormhole>

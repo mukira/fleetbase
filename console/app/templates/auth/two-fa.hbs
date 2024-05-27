@@ -27,7 +27,7 @@
         {{#if this.isCodeExpired}}
             <InfoBlock>
                 <div>{{t "auth.two-fa.verify-code.expired-help-text"}}</div>
-                <Button @type="primary" @wrapperClass="mt-2" @text={{t "auth.two-fa.verify-code.resend-code"}} @icon="arrow-rotate-right" @onClick={{this.resendCode}} />
+                <Button @type="primary" @size="lg" @wrapperClass="mt-2" @text={{t "auth.two-fa.verify-code.resend-code"}} @icon="arrow-rotate-right" @onClick={{this.resendCode}} />
             </InfoBlock>
         {{/if}}
     </div>
@@ -37,7 +37,7 @@
     </div>
 
     <div class="text-center flex flex-row items-center justify-center space-x-4 mt-3.5">
-        <a href="#" class="text-sm text-blue-500 hover:underline inline-block" {{on "click" this.resendCode}}>
+        <a href="#" class="text-sm text-green-500 hover:underline inline-block" {{on "click" this.resendCode}}>
             {{t "auth.two-fa.verify-code.resend-code"}}
         </a>
         <a href="#" class="text-sm text-danger hover:underline inline-block" {{on "click" this.cancelTwoFactor}}>
