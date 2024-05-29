@@ -45,12 +45,55 @@ body[data-theme='dark'] .two-fa-enforcement-alert button#two-fa-setup-button.btn
     padding-right: 0 !important;
 }
 
-body.console-admin-organizations-index-index .next-table-wrapper > table {
+body.console-admin-organizations-index-index .next-table-wrapper>table {
     table-layout: auto;
 }
 
 .btn-primary {
-    background-color: #006a4e !important;
-    border-color: #006a4e !important;
-    box-shadow: #006a4e !important;
+    background-color: #018749 !important;
+    border-color: #01543e !important;
+    /* Darker shade of the background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle box shadow for depth */
+}
+
+#ops-map-view-button.active {
+    background-color: #018749 !important;
+}
+
+#ops-table-view-button.active {
+    background-color: #018749 !important;
+}
+
+#ops-kanban-view-button.active {
+    background-color: #018749 !important;
+}
+
+.rounded-full {
+    background-color: #018749 !important;
+}
+
+.fleetbase-loader {
+    border: 3px solid rgba(1, 84, 62, 1) !important;
+    border-bottom-color: rgba(28, 172, 120, 1) !important;
+}
+
+.overloader > .loader-container {
+    background: rgba(1, 59, 43, 0.775) !important;
+    border: 1px solid #1c2d1e !important;
+    backdrop-filter: blur(3.5px);
+    border-radius: .5rem;
+    padding: .25rem .85rem;
+}
+
+.text-sky-500 {
+    color: #018749 !important;
+}
+
+.active {
+    background-color: #018749 !important;
+}
+
+a:hover {
+    background-color: #018749 !important;
 }
