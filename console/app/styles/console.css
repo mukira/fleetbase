@@ -50,7 +50,6 @@ body.console-admin-organizations-index-index .next-table-wrapper>table {
 }
 
 .btn-primary {
-<<<<<<< HEAD
     background-color: #018749 !important;
     border-color: #01543e !important;
     /* Darker shade of the background color */
@@ -97,9 +96,4 @@ body.console-admin-organizations-index-index .next-table-wrapper>table {
 
 a:hover {
     background-color: #018749 !important;
-=======
-    background-color: #006a4e !important;
-    border-color: #006a4e !important;
-    box-shadow: #006a4e !important;
->>>>>>> 636a924629b5af321acbf8c38368ef03abc266a4
 }
