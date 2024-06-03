@@ -317,11 +317,11 @@ export default class ConsoleController extends Controller {
         });
     }
 
-    @action viewChangelog() {
-        this.modalsManager.show('modals/changelog', {
-            title: this.intl.t('common.changelog'),
-            acceptButtonText: this.intl.t('common.ok'),
-            hideDeclineButton: true,
-        });
-    }
+    // @action viewChangelog() {
+    //     // this.modalsManager.show('modals/changelog', {
+    //     //     title: this.intl.t('common.changelog'),
+    //     //     acceptButtonText: this.intl.t('common.ok'),
+    //     //     hideDeclineButton: true,
+    //     // });
+    // }
 }
