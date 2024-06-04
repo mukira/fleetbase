@@ -1,10 +1,10 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
-import formatCurrency from '@fleetbase/ember-ui/utils/format-currency';
-import formatMeters from '@fleetbase/ember-ui/utils/format-meters';
-import formatBytes from '@fleetbase/ember-ui/utils/format-bytes';
-import formatDuration from '@fleetbase/ember-ui/utils/format-duration';
-import formatDate from '@fleetbase/ember-ui/utils/format-date';
+import formatCurrency from '@lipagas/ember-ui/utils/format-currency';
+import formatMeters from '@lipagas/ember-ui/utils/format-meters';
+import formatBytes from '@lipagas/ember-ui/utils/format-bytes';
+import formatDuration from '@lipagas/ember-ui/utils/format-duration';
+import formatDate from '@lipagas/ember-ui/utils/format-date';
 
 export default class DashboardCountComponent extends Component {
     /**

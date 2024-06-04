@@ -59,22 +59,22 @@ Router.map(function () {
             });
         });
 
-        this.mount('@fleetbase/dev-engine', {
+        this.mount('@lipagas/dev-engine', {
             as: 'developers',
             path: 'developers'
         });
 
-        this.mount('@fleetbase/fleetops-engine', {
+        this.mount('@lipagas/fleetops-engine', {
             as: 'fleet-ops',
             path: 'fleet-ops'
         });
 
-        this.mount('@fleetbase/iam-engine', {
+        this.mount('@lipagas/iam-engine', {
             as: 'iam',
             path: 'iam'
         });
 
-        this.mount('@fleetbase/storefront-engine', {
+        this.mount('@lipagas/storefront-engine', {
             as: 'storefront',
             path: 'storefront'
         });

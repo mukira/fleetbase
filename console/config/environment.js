@@ -53,6 +53,8 @@ module.exports = function (environment) {
             driverAvatar: getenv('DEFAULT_DRIVER_AVATAR', 'https://flb-assets.s3-ap-southeast-1.amazonaws.com/static/driver-icons/moto-driver.png'),
             placeAvatar: getenv('DEFAULT_PLACE_AVATAR', 'https://flb-assets.s3-ap-southeast-1.amazonaws.com/static/place-icons/basic-building.png'),
             extensionIcon: getenv('DEFAULT_EXTENSION_ICON', 'https://flb-assets.s3.ap-southeast-1.amazonaws.com/static/default-extension-icon.svg'),
+            country: 'Kenya',
+            currency: 'KES',
         },
 
         'ember-simple-auth': {

@@ -1,4 +1,4 @@
-import loadExtensions from '@fleetbase/ember-core/utils/load-extensions';
+import loadExtensions from '@lipagas/ember-core/utils/load-extensions';
 
 export function initialize(owner) {
     const universe = owner.lookup('service:universe');

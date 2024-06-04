@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 import { hash } from 'rsvp';
-import groupBy from '@fleetbase/ember-core/utils/group-by';
+import groupBy from '@lipagas/ember-core/utils/group-by';
 
 export default class ConsoleAdminNotificationsRoute extends Route {
     @service fetch;

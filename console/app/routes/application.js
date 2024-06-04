@@ -1,8 +1,8 @@
 import Route from '@ember/routing/route';
 import { tracked } from '@glimmer/tracking';
 import { inject as service } from '@ember/service';
-import isElectron from '@fleetbase/ember-core/utils/is-electron';
-import pathToRoute from '@fleetbase/ember-core/utils/path-to-route';
+import isElectron from '@lipagas/ember-core/utils/is-electron';
+import pathToRoute from '@lipagas/ember-core/utils/path-to-route';
 
 export default class ApplicationRoute extends Route {
     @service session;

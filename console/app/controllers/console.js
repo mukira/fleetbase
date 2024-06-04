@@ -6,7 +6,7 @@ import { later } from '@ember/runloop';
 import { action, computed } from '@ember/object';
 import { alias } from '@ember/object/computed';
 import { isArray } from '@ember/array';
-import first from '@fleetbase/ember-core/utils/first';
+import first from '@lipagas/ember-core/utils/first';
 
 export default class ConsoleController extends Controller {
     /**
@@ -209,8 +209,8 @@ export default class ConsoleController extends Controller {
      * @void
      */
     @action createOrJoinOrg() {
-        const currency = this.currentUser.currency;
-        const country = this.currentUser.country;
+        const currency = this.currentUser.currency || 'KES' ;
+        const country = this.currentUser.country || 'Kenya' ;  
 
         this.modalsManager.show('modals/create-or-join-org', {
             title: this.intl.t('console.create-or-join-organization.modal-title'),

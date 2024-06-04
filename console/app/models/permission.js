@@ -2,7 +2,7 @@ import Model, { attr } from '@ember-data/model';
 import { computed } from '@ember/object';
 import { pluralize } from 'ember-inflector';
 import { format, formatDistanceToNow } from 'date-fns';
-import humanize from '@fleetbase/ember-core/utils/humanize';
+import humanize from '@lipagas/ember-core/utils/humanize';
 
 export const parserPermissionName = function (permissionName, index = 0) {
     const parts = permissionName.split(' ');
